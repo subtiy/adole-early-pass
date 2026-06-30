@@ -28,7 +28,6 @@
         body {
             font-family: var(--font-apple);
             background-color: var(--light-pink);
-            /* Background Soft Pink dengan Polka Dots tipis */
             background-image: radial-gradient(rgba(239, 122, 164, 0.15) 2px, transparent 2px);
             background-size: 20px 20px;
             color: var(--bold-pink);
@@ -40,9 +39,7 @@
 
         h1, h2, h3, h4 { font-family: var(--font-apple); letter-spacing: -0.5px; }
         
-        /* Gambar anti-gepeng */
         .img-fit { width: 100%; height: 100%; object-fit: cover; }
-        /* Padding 8px agar PNG icon tidak mentok ke ujung kotak */
         .icon-fit { width: 100%; height: 100%; object-fit: contain; padding: 8px; }
 
         /* ================= SPLASH SCREEN ================= */
@@ -119,7 +116,6 @@
         }
         .link-card:active { transform: scale(0.97) !important; box-shadow: var(--app-shadow); }
 
-        /* Varian Warna Kartu */
         .card-white { background: var(--bg-white); color: var(--bold-pink); border: 2px solid transparent; }
         .card-white:hover { border-color: var(--soft-pink); }
         
@@ -129,7 +125,6 @@
         .card-pink { background: var(--bold-pink); color: var(--bg-white); }
         .card-pink .link-subtitle { color: rgba(255,255,255,0.8); }
 
-        /* Isi Kartu */
         .link-icon {
             width: 50px; height: 50px; border-radius: 16px;
             background: var(--light-pink); display: flex;
@@ -168,7 +163,6 @@
     <!-- SPLASH SCREEN -->
     <div id="splash">
         <div class="splash-image-container">
-            <!-- GANTI DENGAN GAMBAR LOADING CUSTOM KAMU -->
             <img src="walking.gif" alt="Loading..." class="icon-fit" style="padding: 0;">
         </div>
         <div class="splash-text"> </div>
@@ -181,7 +175,6 @@
         <!-- PROFILE SECTION -->
         <div class="profile-section">
             <div class="profile-avatar">
-                <!-- GANTI DENGAN FOTO PROFIL / MASKOT KAMU -->
                 <img src="maskot.png" alt="Profile" class="img-fit">
             </div>
             <h1 class="profile-title">FIRST-IN ACCESS</h1>
@@ -192,10 +185,8 @@
         <div class="links-container">
             
             <!-- 1. LINK EARLY PASS (Warna Biru) -->
-            <!-- GANTI TANDA # DENGAN LINK ASLINYA -->
             <a href="https://x.com/adolescencetale/status/2071141556514586843" class="link-card card-blue" target="_blank">
                 <div class="link-icon">
-                    <!-- GANTI DENGAN NAMA FILE PNG KAMU -->
                     <img src="key.png" alt="Pass" class="icon-fit">
                 </div>
                 <div class="link-texts">
@@ -205,10 +196,8 @@
                 <div class="link-arrow">›</div>
             </a>
 
-            <!-- 2. LINK UNDANGAN / INVI CARD (Warna Putih) -->
             <a href="https://ibb.co.com/27Z1JJhm" class="link-card card-white" target="_blank">
                 <div class="link-icon">
-                    <!-- GANTI DENGAN NAMA FILE PNG KAMU -->
                     <img src="gembok.png" alt="Invi" class="icon-fit">
                 </div>
                 <div class="link-texts">
@@ -218,7 +207,6 @@
                 <div class="link-arrow">›</div>
             </a>
 
-            <!-- 3. LINK POSTER UTAMA (Warna Putih) -->
             <a href="https://x.com/adolescencetale/status/2069707099433771342/video/1" class="link-card card-white" target="_blank">
                 <div class="link-icon">
                     <!-- GANTI DENGAN NAMA FILE PNG KAMU -->
@@ -231,10 +219,8 @@
                 <div class="link-arrow">›</div>
             </a>
 
-            <!-- 4. LINK TALLY / REGISTRASI (Warna Bold Pink) -->
             <a href="https://tally.so/r/BzgX1Q" class="link-card card-pink" target="_blank">
                 <div class="link-icon">
-                    <!-- GANTI DENGAN NAMA FILE PNG KAMU -->
                     <img src="potion.png" alt="Tally" class="icon-fit">
                 </div>
                 <div class="link-texts">
@@ -261,7 +247,6 @@
                 const splash = document.getElementById('splash');
                 if(splash) splash.classList.add('splash-hide');
                 
-                // Menambahkan class ke body untuk memulai animasi berurutan
                 document.body.classList.add('app-loaded');
             }, 1800); // 1.8 detik loading screen
         });
